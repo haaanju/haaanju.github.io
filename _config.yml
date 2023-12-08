@@ -8,9 +8,4 @@ author:
 timezone: Europe/Berlin
 theme: jekyll-theme-minimal
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
-
 markdown: kramdown
-highlighter: rouge
