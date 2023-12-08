@@ -1,11 +1,7 @@
 title: DS system docs testing
 description: This is testbed for DS documentation built with Jekyll
-baseurl: /haaanju.github.io
 url: https://haaanju.github.io
 author:
   name: Hanju Kim
   email: nnnneeee@live.co.kr
 timezone: Europe/Berlin
-theme: jekyll-theme-minimal
-
-markdown: kramdown
