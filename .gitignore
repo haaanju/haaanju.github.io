@@ -4,8 +4,6 @@
 
 
 # 특정 파일을 제외
-Gemfile
-Gemfile.Lock
 
 
 # 특정 디렉토리를 제외
