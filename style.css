@@ -5,7 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #565656;
+  background-color: #FFFFFF;
 }
 
 #container {
@@ -16,7 +16,7 @@ body {
 }
 
 .color-box {
-  width: 100px;
-  height: 100px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #000;
 }
