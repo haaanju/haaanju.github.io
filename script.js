@@ -1,7 +1,7 @@
 const container = document.getElementById("container");
 
 async function fetchColors() {
-  const response = await fetch("color.json");
+  const response = await fetch("colors.json");
   const json = await response.json();
   displayColors(json.colors);
 }
