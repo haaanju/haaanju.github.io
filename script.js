@@ -14,7 +14,7 @@ function displayColors(colors, parentKey = "") {
       colorItem.classList.add("color-item");
 
       const colorName = document.createElement("span");
-      colorName.textContent = parentKey + key;
+      colorName.textContent = key;
       colorItem.appendChild(colorName);
 
       const colorBox = document.createElement("div");
@@ -22,9 +22,23 @@ function displayColors(colors, parentKey = "") {
       colorBox.style.backgroundColor = color.value;
       colorItem.appendChild(colorBox);
 
-      container.appendChild(colorItem);
+      const sectionId = parentKey.replace(/[^a-zA-Z0-9]/g, "-");
+      let section = document.getElementById(sectionId);
+      if (!section) {
+        section = document.createElement("div");
+        section.id = sectionId;
+        section.classList.add("section");
+
+        const sectionTitle = document.createElement("h2");
+        sectionTitle.classList.add("section-title");
+        sectionTitle.textContent = parentKey;
+        section.appendChild(sectionTitle);
+
+        container.appendChild(section);
+      }
+      section.appendChild(colorItem);
     } else {
-      displayColors(color, key + " > ");
+      displayColors(color, parentKey + key + " > ");
     }
   }
 }
