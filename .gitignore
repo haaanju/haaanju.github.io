@@ -1,0 +1,15 @@
+# 파일 확장자를 사용하여 제외
+*.log
+
+
+
+# 특정 파일을 제외
+Gemfile
+Gemfile.Lock
+
+
+# 특정 디렉토리를 제외
+node_modules/
+
+# 특정 디렉토리 내의 모든 파일을 제외
+temp/* 
